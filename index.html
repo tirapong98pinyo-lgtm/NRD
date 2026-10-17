@@ -1,47 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>NRD</title>
-
-  <!-- Mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" content="#0f172a">
-
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NRD PINYO 98 | ระบบรับซื้อผลไม้</title>
 
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #000;
+    * {
+      box-sizing: border-box;
     }
 
-    iframe {
-      width: 100vw;
-      height: 100vh;
-      border: none;
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .iframe-full {
       display: block;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      border: none;
     }
   </style>
 </head>
 <body>
-
-<iframe
-  src="https://script.google.com/macros/s/AKfycbyHbWMzUNe77hSccjt1ygWQ5mzHeXFwkRDXZqNKZP0hg3or9dhvaJgmkHuhHCA6Vept/exec"
-  allowfullscreen>
-</iframe>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-  }
-</script>
-
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbyHbWMzUNe77hSccjt1ygWQ5mzHeXFwkRDXZqNKZP0hg3or9dhvaJgmkHuhHCA6Vept/exec"
+    class="iframe-full"
+    title="ระบบรับซื้อผลไม้ NRD PINYO 98"
+    loading="eager"
+    allow="clipboard-write">
+  </iframe>
 </body>
 </html>
